@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+font-family: 'Poppins',sans-serif;
+}
+
+/*--HEADER--*/
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: radial-gradient(green);
+    }
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+    }
+.navbar{
+display: flex;
+align-items: center;
+padding: 20px;
+} 
+nav{
+flex: 1;
+text-align: right;
+}
+nav ul{
+display: inline-block;
+list-style: none;
+}
+nav ul li{
+display: inline-block;
+margin-right: 20px;
+}
+a{
+text-decoration: none;
+color: #555;
+}
+.container .navbar .logo{
+    margin-left: -30px;
+}
+
+/*--CART PAGE--*/
+
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 50%;
+    border-collapse: collapse;
+    margin-left: 350px;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 410px;
+}
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 50%;
+    max-width: 300px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
+
+/*--FOOTER--*/
+
+.footer{
+background: radial-gradient(#fff,#ffd6d6);
+margin-bottom: -20px;
+}
+.footer-a{
+align-items: center;
+}
+.footer-b{
+margin-top: 20px;
+}
+.footer-c{
+margin-bottom: 0px;
+align-items: center;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.h4{
+    color: #555;
+    font-weight: normal;
+    margin-left: 50px;
+}
+.p{
+    color: #555;
+}
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    } 
+    .single-product .row{
+        text-align: left;
+    }
+    
+}

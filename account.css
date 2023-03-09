@@ -1,0 +1,168 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+font-family: 'Poppins',sans-serif;
+}
+
+/*--HEADER--*/
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: radial-gradient(green);
+    }
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+    }
+.navbar{
+display: flex;
+align-items: center;
+padding: 20px;
+} 
+nav{
+flex: 1;
+text-align: right;
+}
+nav ul{
+display: inline-block;
+list-style: none;
+}
+nav ul li{
+display: inline-block;
+margin-right: 20px;
+}
+a{
+text-decoration: none;
+color: #555;
+}
+.container .navbar .logo{
+    margin-left: -30px;
+}
+
+/*--ACCOUNT PAGE--*/
+
+.account-page{
+ background: #ffd6d6;
+}
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 50px 0px rgba(0,0,0,0.1);
+    margin-left: 120px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.col-2 img{
+    width: 550px;
+    height: 550px;
+    margin-left: 200px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.row-1{
+    display: flex;
+}
+.form-btn{
+    display: inline-block;
+}
+.form-container form{
+    max-width: 200px;
+    padding: 0 20px;
+    top: 100px;
+    bottom: 50px;
+    transition: transform 1s;
+    position: absolute;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    padding: 0 15px;
+    border: 2px solid #ffa500;
+    border-radius: 20px;
+    margin-left: 46px;
+}
+ form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    background: hsl(6, 90%, 70%);
+    border-radius: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 46px;
+ }
+ form .btn:focus{
+    outline: none;
+ }
+ #LoginForm{
+    left: -300px;
+ }
+#RegForm{
+    left: 0;
+}
+form a{
+    font-size: 12px;
+    margin-left: 15px;
+}
+#indicator{
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px );
+    transition: transform 1s;
+}
+
+
+/*--FOOTER--*/
+
+.footer{
+background: radial-gradient(#fff,#ffd6d6);
+margin-bottom: -20px;
+}
+.footer-a{
+align-items: center;
+}
+.footer-b{
+margin-top: 20px;
+}
+.footer-c{
+margin-bottom: 0px;
+align-items: center;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.h4{
+    color: #555;
+    font-weight: normal;
+    margin-left: 50px;
+}
+.p{
+    color: #555;
+}
+

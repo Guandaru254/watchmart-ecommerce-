@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+<title>All Products - WATCHMART</title>
+<link rel="stylesheet" href="products.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                   <img src="images/logo.png" alt="NO IMAGES" width="125px">
+                </div>
+                <nav>
+                   <ul>
+                    <li><a href=""><b>Home</b></a></li>
+                    <li><a href=""><b>About</b></a></li>
+                    <li><a href=""><b>Products</b></a></li>
+                    <li><a href=""><b>Account</b></a></li>
+                    <li><a href=""><b>Cart</b></a></li>
+                    <li><a href=""><b>Contacts</b></a></li>
+                   </ul>
+                </nav>
+                <img src="" alt="">
+              </div>
+        </div>
+          
+    
+    </div>
+
+   
+     
+    <!---Single Product Details-->
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-3">
+                <img src="images/watch2.jpg" width="100%" id="product-img">
+
+             <div class="small-img-row">
+               <div class="small-img-col">
+                <img src="images/watch2.jpg" width="100%" class="small-img">
+               </div>
+               <div class="small-img-col">
+                <img src="images/watch2.jpg" width="100%">
+               </div>
+               <div class="small-img-col">
+                <img src="images/watch2.jpg" width="100%">
+               </div>
+               <div class="small-img-col">
+                <img src="images/watch2.jpg" width="100%">
+               </div>
+             </div>
+
+            </div>
+            <div class="col-3">
+                <p>Home / Rolex</p>
+                <h3>Luxury Rolex</h3>
+                <h4>500 USD</h4>
+            <select>
+                <option>BLack strap</option>
+                <option>Brown strap</option>
+                <option>Blue strap</option>
+            </select> 
+            <input type="number" value="1">
+            <a href="" class="btn">Add to cart</a> 
+           <!-- Create a "Buy Now" button -->
+            <button id="buyNowButton">Buy Now</button>
+            <h3>Product Details  <i class="fa fa-indent"></i></h3>
+            <p>This is a well renowned watch brand due to the luxury associated with it.</p>
+            </div>
+        </div>
+    </div>
+
+
+     <div class="container">
+
+           <h2>Related Products</h2>
+        <div class="row">
+         <div class="col-3">
+             <img src="images/watch1.jpg" alt="NO IMAGES">
+             <h4>AP 5</h4>
+              <div class="rating">
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>  
+                 <i class="fa fa-star-o"></i>
+              </div>
+             <p>5,000 USD</p>
+         </div>
+         <div class="col-3">
+             <img src="images/watch2.jpg" alt="NO IMAGES">
+             <h4>Rolex</h4>
+              <div class="rating">
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>  
+                 <i class="fa fa-star-o"></i>
+              </div>
+             <p>5,000 USD</p>
+         </div>
+         <div class="col-3">
+            <img src="images/watch3.jpg" alt="NO IMAGES">
+            <h4>Rolex</h4>
+             <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>  
+                <i class="fa fa-star-o"></i>
+             </div>
+            <p>5,000 USD</p>
+        </div>
+        <div class="col-3">
+            <img src="images/watchmart.png" alt="NO IMAGES">
+            <h4>Rolex</h4>
+             <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>  
+                <i class="fa fa-star-o"></i>
+             </div>
+            <p>5,000 USD</p>
+        </div>
+        </div> 
+     </div>
+       
+     
+     
+     <!---FOOTER-->
+
+     
+     <footer>
+       <div class="footer">
+         <div class="row">
+           <div class="footer-a">
+             <h4>Contact Us</h4>
+             <p>Phone: 0719428996</p>
+             <p>Email: watchmart@gmail.com</p>
+           </div>
+           <div class="footer-b">
+             <h4>Links</h4>
+             <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Products</a></li>
+               <li><a href="#">Account</a></li>
+               <li><a href="#">Contacts</a></li>
+             </ul>
+           </div>
+           <div class="footer-c">
+             <p class="text-right">Copyright © 2023 Watchmart Inc.</p>
+           </div>
+         </div>
+       </div>
+     </footer>
+   
+    <!----Javasript--->
+<script>
+  var ProductImg = document.getElementById("PRoductImg")
+   var SmallImg = document.getElementByClassName("small-img")
+
+      SmallImg[0].onclick = function()
+      {
+        ProductImg.src = SmallImg[0].src;
+      }
+      SmallImg[0].onclick = function()
+      {
+        ProductImg.src = SmallImg[1].src;
+      }
+      SmallImg[0].onclick = function()
+      {
+        ProductImg.src = SmallImg[2].src;
+      }
+      SmallImg[0].onclick = function()
+      {
+        ProductImg.src = SmallImg[3].src;
+      }
+
+</script>
+
+
+
+</body>
+</html>
